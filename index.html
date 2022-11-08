@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='box-love'>
+        <span>Bạn có yêu mình không</span>
+       <div class='box'>
+       <button id="love">Yêu</button>
+        <button  id="no-love">Không Yêu</button>
+     </div>
+     </div>
+</body>
+</html>
+<script>
+    var love = document.getElementById("love");
+var no_love =document.getElementById("no-love");
+
+love.addEventListener("click", myFunction);
+function myFunction(){
+ alert('Mình Biết Mà ahihi')
+}
+
+no_love.addEventListener("mouseover",lovefunction);
+function lovefunction(){
+   no_love.classList.toggle('move')
+}
+</script>
